@@ -28,8 +28,8 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(patserver.js);
-  var path = require('path');
+  res.sendFile(path.join(__dirname, 'ui', '/madi.png'));
+});
 var app = express();
 app.use(morgan('combined'));
 app.get('/', function (req, res) {
